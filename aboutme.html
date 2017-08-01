@@ -18,24 +18,28 @@
     <h3>Bugs</h3>
     <h3>Cheetos and other snacks with artificial cheese</h3>
     
-   <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-style="background-color:#FFB6C1;width:900px;height:100px;padding:100px;">
-Mouse Over Me</div>
 
-<script>
-function mOver(obj) {
-    obj.innerHTML = "The picture above shows a game I created/coded on Scratch with Bian. We made a paddleball game, using a dinosaur and dragon as the paddles and the earth as a ball. We made this in the Bank of America Girls Who Code location."
+<img src="Screen Shot 2017-07-18 at 9.22.37 AM.png" id="image"></img>
+    <p id="text">
+        The picture above shows a game I created/coded on Scratch with Bian. We made a paddleball game, using a dinosaur and dragon as the paddles and the earth as a ball. We made this in the Bank of America Girls Who Code location.
+    </p>
+var item = document.getElementById("image");
+item.addEventListener("mouseover", func, false);
+item.addEventListener("mouseout", func1, false);
+
+function func()
+{   
+   document.getElementById("text").setAttribute("style", "display:block;")
 }
 
-function mOut(obj) {
-    obj.innerHTML = <img src="Screen Shot 2017-07-18 at 9.22.37 AM.png"></img>
+function func1()
+{  
+    document.getElementById("text").setAttribute("style", "display:none;")
 }
-</script>
-
     
     
-     <img src="Screen Shot 2017-07-18 at 9.22.37 AM.png"></img>    
-  <h2> The picture above shows a game I created/coded on Scratch with Bian. We made a paddleball game, using a dinosaur and dragon as the paddles and the earth as a ball. We made this in the Bank of America Girls Who Code location. 
+<!--      <img src="Screen Shot 2017-07-18 at 9.22.37 AM.png"></img>    
+  <h2> The picture above shows a game I created/coded on Scratch with Bian. We made a paddleball game, using a dinosaur and dragon as the paddles and the earth as a ball. We made this in the Bank of America Girls Who Code location.  -->
   
   </body>
 
